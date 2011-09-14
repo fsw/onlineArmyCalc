@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+	<title>ArmyCalc - online editor test</title>
+	<meta charset="utf-8" />
+	
+	<link rel="stylesheet" media="screen" href="test.css">
+	
+	<script src="engine/js/jquery-1.6.min.js"></script>
+	<script src="engine/armycalc.js"></script>
+	<link rel="stylesheet" media="screen" href="engine/armycalc.css">
+	
+	<link rel="shortcut icon" href="favicon.ico" />
+	<meta name="author" content="CadoSolutions" />
+	<meta name="date" content="" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+  
+  </head>
+  <body>
+	
+	<div id="legend">
+	  <p>
+	  This is the example page using jsArmyCalc witch is a part of the <a href='http://armycalc.com'>ArmyCalc</a> project.
+	  </p>
+	  <p>
+	  Please see this page source to see how to embed jsArmyCalc in a html document.
+	  </p>
+	  <p>
+	  For instructions on how to build your own TWR 3.0 file please see <a href='twrs/'>example twrs</a>.
+	  </p>
+	  <p>
+	  Please select ruleset to load it with jsArmyCalc API:
+	  <br/>
+	  <select id="twr" name="twr" onchange="calc.loadTWR($('#twr').val());">	
+		<option value="" selected="true">please select</option>
+		<option value="twrs/example1.twr/">Example TWR 3.0</option>
+		<option value="twrs/twr2to3test.twr/">TWR 2.0 conversion</option>
+	  </select>
+	  </p>
+	</div>
+
+	<div id="rhs">
+	  <div id='editorcanvas' style='margin:20px; border:1px solid #aaa; height:400px;'></div>
+	</div>
+
+	<script type="text/javascript">
+	<!--
+	calc = jsArmyCalc( '#editorcanvas', 'template.html' );
+	//uncomment this to load test1 on init
+	//calc.loadTWR('test1.twr/');
+	//-->
+	</script>
+
+  </body>
+</html>

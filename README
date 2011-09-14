@@ -2,6 +2,8 @@
 onlineArmyCalc
 online army calculator based on TWR files
 part of the ArmyCalc project
+in fact it is a very simple html document that uses the common javascript engine
+
 Copyright 2011 CadoSolutions. All rights reserved.
 released under terms of Simplified BSD License
 
@@ -9,4 +11,13 @@ developer: Franciszek Szczepan Wawrzak <frank@wawrzak.com>
 project website: http://armycalc.com/
 
 
+FILES IN THIS PACKAGE
+
+README - this file
+LICENSE - license
+template.html - online calculator custom template
+test.css - test styles
+test.html - simple html embedding calculator engine
+twrs - should be a git submodule containing example TWRS
+engine - should be a git submodule containing jsArmyCalc engine
 
